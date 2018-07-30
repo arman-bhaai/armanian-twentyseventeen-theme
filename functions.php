@@ -412,6 +412,9 @@ function twentyseventeen_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
 
+	// <<<+++ Add custom fonts for Bangla Text +++>>>
+	wp_enqueue_style('twentyseventeen-fonts-bangla', 'https://fonts.maateen.me/kalpurush/font.css');
+
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
 
