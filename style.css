@@ -911,6 +911,9 @@ html[lang="th"] * {
 	letter-spacing: 0 !important;
 }
 
+/* <<<+++ Typography for Bengali Fonts +++>>> */
+.bangla-text {font-family: 'Kalpurush', sans-serif;}
+
 /*--------------------------------------------------------------
 6.0 Forms
 --------------------------------------------------------------*/
