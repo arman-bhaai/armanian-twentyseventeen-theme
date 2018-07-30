@@ -18,6 +18,9 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 
+	<h1>জীবনটাই তো জীববিজ্ঞান!!!</h1>
+	<?php echo do_shortcode('[metaslider id="156"]'); ?>
+	<h2>আমাদের অনলাইন রিসোর্সের সাহায্যে নিজেকে করে নাও আরো সমৃদ্ধ!!!</h2>
 		<?php
 		// Get each of our panels and show the post data.
 		if ( 0 !== twentyseventeen_panel_count() || is_customize_preview() ) : // If we have pages to show.
