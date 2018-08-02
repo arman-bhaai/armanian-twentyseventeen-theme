@@ -3,7 +3,7 @@
  * Twenty Seventeen: Color Patterns
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage Armanian_Twenty_Seventeen
  * @since 1.0
  */
 

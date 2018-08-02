@@ -15,7 +15,7 @@
 		the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 	}
 	?>
-	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyseventeen' ) ); ?>" class="imprint">
-		<?php printf( __( 'Proudly powered by %s', 'twentyseventeen' ), 'WordPress' ); ?>
-	</a>
+		<p>
+			<?php printf( 'Copyright &copy;2018 <a href="http://muktoweb.com" target="_blank"><b>Mukto Web</b></a> <br> Designed by <a href="https://fb.me/arman.bhaai" target="_blank" class="imprint"><b>#arman.bhaai</b></a>' ); ?>
+		</p>
 </div><!-- .site-info -->

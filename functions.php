@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage Armanian_Twenty_Seventeen
  * @since 1.0
  */
 
@@ -413,7 +413,7 @@ function twentyseventeen_scripts() {
 	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
 
 	// <<<+++ Add custom fonts for Bangla Text +++>>>
-	wp_enqueue_style('twentyseventeen-fonts-bangla', 'https://fonts.maateen.me/kalpurush/font.css');
+	wp_enqueue_style('twentyseventeen-fonts-bangla', get_theme_file_uri('/assets/fonts/fonts.css') );
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
