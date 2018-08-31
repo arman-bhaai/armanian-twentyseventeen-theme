@@ -405,6 +405,13 @@ function twentyseventeen_colors_css_wrap() {
 <?php }
 add_action( 'wp_head', 'twentyseventeen_colors_css_wrap' );
 
+/* <<<+++ Include Custom jQuery Script +++>>> */
+function armanian_include_custom_jquery() {
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', get_theme_file_uri('/assets/js/jquery-3.3.1.min.js'));
+}
+add_action('wp_enqueue_scripts', 'armanian_include_custom_jquery');
+
 /**
  * Enqueue scripts and styles.
  */
@@ -417,6 +424,14 @@ function twentyseventeen_scripts() {
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
+
+
+	// <<<+++ Lecture Gallery Styles +++>>> 
+	if ( is_page('lecture-gallery') ) {
+		wp_enqueue_style( 'twentyseventeen-lecture-gallery', get_theme_file_uri('/assets/css/lecture-gallery-style.css'));
+		// wp_enqueue_style( 'font-awesome', get_theme_file_uri('/assets/css/fontawesome.min.css'));
+		wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+	}
 
 	// Load the dark colorscheme.
 	if ( 'dark' === get_theme_mod( 'colorscheme', 'light' ) || is_customize_preview() ) {
@@ -453,6 +468,11 @@ function twentyseventeen_scripts() {
 	wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
 
 	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
+
+	// <<<+++ Lecture Gallery Script +++>>> 
+	if ( is_page('lecture-gallery') ) {
+		wp_enqueue_script( 'twentyseventeen-lecture-gallery', get_theme_file_uri('/assets/js/lecture-gallery.js'), array( 'jquery' ), '1.0', true);
+	}
 
 	wp_localize_script( 'twentyseventeen-skip-link-focus-fix', 'twentyseventeenScreenReaderText', $twentyseventeen_l10n );
 
