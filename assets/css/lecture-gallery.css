@@ -15,16 +15,24 @@
     font-size: 2.5em;
     font-weight: 500;
     line-height: 1.1;
+    font-weight: bold;
+    border-bottom: 2px dashed #93a1a5;
+    padding-bottom: 20px;
+    color: #61abec;
   }
-  .header__subtitle {
+
+  .section {
+    margin-top: 50px;
+  }
+
+  .section .section-title {
     margin: 0;
+    font-weight: bold;
     font-size: 1.5em;
-    color: #949fb0;
-    font-family: 'Yesteryear', cursive;
-    font-weight: 500;
-    line-height: 1.1;
+    text-align: center;
+    color: #969c9e;
   }
-  
+
   .cards {
     padding: 15px;
     display: flex;
@@ -33,7 +41,7 @@
   
   .card {
     margin: 15px;
-    width: calc((100% / 3) - 30px);
+    width: calc((100% / 2) - 30px);
     transition: all 0.2s ease-in-out;
   }
   .card__expander {
@@ -163,7 +171,7 @@
     }
   
     .card__expander {
-      width: calc(300% + 60px);
+      width: calc(191% + 60px);
     }
   }
   @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -181,13 +189,14 @@
   }
   
   .box-item {
+    border: 8px solid #211f1f;
     display: inline-block;
     height: 120px;
-    width: 160px;
+    width: 175px;
     margin: 30px 10px;
     position: relative;
-    background: dodgerblue;
-    
+    background: #6bc760;
+    font-weight: bold;
     box-shadow: 0 -15px 15px -15px #2C3E50, 0 15px 15px -15px #2C3E50;
   }
 
@@ -200,4 +209,5 @@
   .box-item p {
     margin-top:70px !important;
     text-align: center;
+    color: #3a3737;
   }

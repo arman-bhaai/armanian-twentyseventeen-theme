@@ -23,7 +23,7 @@ get_header(); ?>
 
 
 	<h2 class="tagline-1">!!! BIOLOGY ZONE !!!</h2>
-	<?php echo do_shortcode('[metaslider id="156"]'); ?>
+	<?php //echo do_shortcode('[metaslider id="156"]'); ?>
 	<h2 class="tagline-2">আমাদের অনলাইন রিসোর্সের সাহায্যে নিজেকে করে নাও আরো সমৃদ্ধ!!!</h2>
 
 

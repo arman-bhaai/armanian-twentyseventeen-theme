@@ -41,6 +41,25 @@
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
+
+<!-- JavaScript Code for Changing the Header Image URL in Comparison to Screen Window Size -->
+<script>
+	function myFunction(x) {
+		if (x.matches) { // If media query matches
+			document.getElementById("changeable-header-image").src = "<?php print(get_theme_file_uri()) ?>/assets/images/header-mobile.jpg";
+		} else {
+			document.getElementById("changeable-header-image").src = "<?php print(get_theme_file_uri()) ?>/assets/images/header-desktop.jpg";
+		}
+	}
+	
+
+	var x = window.matchMedia("(max-width: 700px)")
+	myFunction(x) // Call listener function at run time
+	x.addListener(myFunction) // Attach listener function on state changes
+</script>
+
+
+
 <?php wp_footer(); ?>
 </body>
 </html>

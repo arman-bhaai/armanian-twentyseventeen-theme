@@ -426,11 +426,21 @@ function twentyseventeen_scripts() {
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
 
 
-	// <<<+++ Lecture Gallery Styles +++>>> 
+	// <<<+++ Lecture Gallery +++>>> 
 	if ( is_page('lecture-gallery') ) {
-		wp_enqueue_style( 'twentyseventeen-lecture-gallery', get_theme_file_uri('/assets/css/lecture-gallery-style.css'));
+		wp_enqueue_style( 'twentyseventeen-lecture-gallery', get_theme_file_uri('/assets/css/lecture-gallery.css'));
 		// wp_enqueue_style( 'font-awesome', get_theme_file_uri('/assets/css/fontawesome.min.css'));
 		wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+	}
+
+	// <<<+++ Album Styles +++>>> 
+	if ( is_page_template('templates/template-album.php') ) {
+		wp_enqueue_style( 'armanian-custom-album', get_theme_file_uri('/assets/css/armanian-custom-album.css'));
+	}
+
+	// <<<+++ Gallery Styles +++>>> 
+	if ( is_page_template('templates/template-gallery.php') ) {
+		wp_enqueue_style( 'armanian-custom-album', get_theme_file_uri('/assets/css/armanian-custom-gallery.css'));
 	}
 
 	// Load the dark colorscheme.
@@ -469,7 +479,7 @@ function twentyseventeen_scripts() {
 
 	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 
-	// <<<+++ Lecture Gallery Script +++>>> 
+	// <<<+++ Lecture Gallery Layer 1 Script +++>>> 
 	if ( is_page('lecture-gallery') ) {
 		wp_enqueue_script( 'twentyseventeen-lecture-gallery', get_theme_file_uri('/assets/js/lecture-gallery.js'), array( 'jquery' ), '1.0', true);
 	}

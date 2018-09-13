@@ -23,102 +23,254 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main bangla-text" role="main">
 
-			<?php
-			/* while ( have_posts() ) : the_post();
+            <div class="wrapper">
+                <div class="header">
+                    <h1 class="header__title">Lecture Gallery</h1>
+                </div>
 
-				get_template_part( 'template-parts/page/content', 'page' );
+                <div id="hsc-20-section" class="section">
+                    <h1 class="section-title">H.S.C - Batch '20</h1>
+                    <div class="cards">    
+                        <div class=" card [ is-collapsed ] ">
+                            <div class="card__inner [ js-expander ]">
+                                <span>H.S.C - 3:30</span>
+                                <i class="fa fa-folder-o"></i>
+                            </div>
+                            <div class="card__expander">
+                                <i class="fa fa-close [ js-collapser ]"></i>
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+                                <a href="<?php echo esc_url( home_url('/hsc-3-30-running/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-eject"></i>
+                                        <p>Running Lecture</p>
+                                    </div>
+                                </a>
+                                <a href="<?php echo esc_url( home_url('/hsc-3-30/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-backward"></i>
+                                        <p>Previous Lectures</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-			endwhile; // End of the loop. */
-			?>
+                        <div class=" card [ is-collapsed ] ">
+                            <div class="card__inner [ js-expander ]">
+                                <span>H.S.C - 5:30</span>
+                                <i class="fa fa-folder-o"></i>
+                            </div>
+                            <div class="card__expander">
+                                <i class="fa fa-close [ js-collapser ]"></i>
 
+                                <a href="<?php echo esc_url( home_url('/hsc-5-30-running/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-eject"></i>
+                                        <p>Running Lecture</p>
+                                    </div>
+                                </a>
+                                <a href="<?php echo esc_url( home_url('/hsc-5-30/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-backward"></i>
+                                        <p>Previous Lectures</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-<div class="wrapper">
-    <div class="header">
-        <h1 class="header__title">Lecture Gallery</h1>
-        <h2 class="header__subtitle">Browse</h2>
-    </div>
-
-    <div class="cards">    
-        <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-                <span>Batch 01</span>
-                <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-
-                <a href="#">
-                    <div class="box-item">
-                        <i class="fa fa-eject"></i>
-                        <p>Running Lecture</p>
                     </div>
-                </a>
-                <a href="#">
-                    <div class="box-item">
-                        <i class="fa fa-backward"></i>
-                        <p>Previous Lectures</p>
+
+                </div>
+
+                <div id="hsc-19-section" class="section">
+                    <h1 class="section-title">H.S.C - Batch '19</h1>
+                    <div class="cards">    
+                        <div class=" card [ is-collapsed ] ">
+                            <div class="card__inner [ js-expander ]">
+                                <span>H.S.C - 4:30</span>
+                                <i class="fa fa-folder-o"></i>
+                            </div>
+                            <div class="card__expander">
+                                <i class="fa fa-close [ js-collapser ]"></i>
+
+                                <a href="<?php echo esc_url( home_url('/hsc-4-30-running/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-eject"></i>
+                                        <p>Running Lecture</p>
+                                    </div>
+                                </a>
+                                <a href="<?php echo esc_url( home_url('/hsc-4-30/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-backward"></i>
+                                        <p>Previous Lectures</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class=" card [ is-collapsed ] ">
+                            <div class="card__inner [ js-expander ]">
+                                <span>H.S.C - 6:30</span>
+                                <i class="fa fa-folder-o"></i>
+                            </div>
+                            <div class="card__expander">
+                                <i class="fa fa-close [ js-collapser ]"></i>
+
+                                <a href="<?php echo esc_url( home_url('/hsc-6-30-running/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-eject"></i>
+                                        <p>Running Lecture</p>
+                                    </div>
+                                </a>
+                                <a href="<?php echo esc_url( home_url('/hsc-6-30/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-backward"></i>
+                                        <p>Previous Lectures</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-                </a>
-            </div>
-        </div>
 
-        <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-                <span>Batch 02</span>
-                <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
+                </div>
 
-                <a href="#">
-                    <div class="box-item">
-                        <i class="fa fa-eject"></i>
-                        <p>Running Lecture</p>
+                <div id="ssc-section" class="section">
+                    <h1 class="section-title">S.S.C - Batch '19</h1>
+                    <div class="cards">    
+                        <div class=" card [ is-collapsed ] ">
+                            <div class="card__inner [ js-expander ]">
+                                <span>S.S.C - 10:30</span>
+                                <i class="fa fa-folder-o"></i>
+                            </div>
+                            <div class="card__expander">
+                                <i class="fa fa-close [ js-collapser ]"></i>
+
+                                <a href="<?php echo esc_url( home_url('/ssc-10-30-running/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-eject"></i>
+                                        <p>Running Lecture</p>
+                                    </div>
+                                </a>
+                                <a href="<?php echo esc_url( home_url('/ssc-10-30/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-backward"></i>
+                                        <p>Previous Lectures</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class=" card [ is-collapsed ] ">
+                            <div class="card__inner [ js-expander ]">
+                                <span>S.S.C - 1:00</span>
+                                <i class="fa fa-folder-o"></i>
+                            </div>
+                            <div class="card__expander">
+                                <i class="fa fa-close [ js-collapser ]"></i>
+
+                                <a href="<?php echo esc_url( home_url('/ssc-1-00-running/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-eject"></i>
+                                        <p>Running Lecture</p>
+                                    </div>
+                                </a>
+                                <a href="<?php echo esc_url( home_url('/ssc-1-00/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-backward"></i>
+                                        <p>Previous Lectures</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-                </a>
-                <a href="#">
-                    <div class="box-item">
-                        <i class="fa fa-backward"></i>
-                        <p>Previous Lectures</p>
+
+                </div>
+
+                <div id="nine-section" class="section">
+                    <h1 class="section-title">Class - Nine</h1>
+                    <div class="cards">    
+                        <div class=" card [ is-collapsed ] ">
+                            <div class="card__inner [ js-expander ]">
+                                <span>Nine - 9:30</span>
+                                <i class="fa fa-folder-o"></i>
+                            </div>
+                            <div class="card__expander">
+                                <i class="fa fa-close [ js-collapser ]"></i>
+
+                                <a href="<?php echo esc_url( home_url('/nine-9-30-running/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-eject"></i>
+                                        <p>Running Lecture</p>
+                                    </div>
+                                </a>
+                                <a href="<?php echo esc_url( home_url('/nine-9-30/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-backward"></i>
+                                        <p>Previous Lectures</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class=" card [ is-collapsed ] ">
+                            <div class="card__inner [ js-expander ]">
+                                <span>Nine - 2:00</span>
+                                <i class="fa fa-folder-o"></i>
+                            </div>
+                            <div class="card__expander">
+                                <i class="fa fa-close [ js-collapser ]"></i>
+
+                                <a href="<?php echo esc_url( home_url('/nine-2-00-running/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-eject"></i>
+                                        <p>Running Lecture</p>
+                                    </div>
+                                </a>
+                                <a href="<?php echo esc_url( home_url('/nine-2-00/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-backward"></i>
+                                        <p>Previous Lectures</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-                </a>
-            </div>
-        </div>
 
-        <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-                <span>Batch 03</span>
-                <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
+                </div>
 
-                <a href="#">
-                    <div class="box-item">
-                        <i class="fa fa-eject"></i>
-                        <p>Running Lecture</p>
+                <div id="eight-section" class="section">
+                    <h1 class="section-title">Class - Eight</h1>
+                    <div class="cards">    
+                        <div class=" card [ is-collapsed ] ">
+                            <div class="card__inner [ js-expander ]">
+                                <span>Eight - 12:00</span>
+                                <i class="fa fa-folder-o"></i>
+                            </div>
+                            <div class="card__expander">
+                                <i class="fa fa-close [ js-collapser ]"></i>
+
+                                <a href="<?php echo esc_url( home_url('/eight-12-00-running/') ); ?>">
+                                    <div class="box-item">
+                                        <i class="fa fa-eject"></i>
+                                        <p>Running Lecture</p>
+                                    </div>
+                                </a>
+                                <a href="<?php echo esc_url( home_url('/eight-12-00/') ); ?>" >
+                                    <div class="box-item">
+                                        <i class="fa fa-backward"></i>
+                                        <p>Previous Lectures</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-                </a>
-                <a href="#">
-                    <div class="box-item">
-                        <i class="fa fa-backward"></i>
-                        <p>Previous Lectures</p>
-                    </div>
-                </a>
+
+                </div>
+
             </div>
-        </div>
-
-
-
-    </div>
-</div>
-
-
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

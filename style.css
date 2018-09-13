@@ -1780,9 +1780,9 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	height: auto;
 	left: 50%;
 	max-width: 1000%;
-	min-height: 100%;
+	/* min-height: 100%; */
 	min-width: 100%;
-	min-width: 100vw; /* vw prevents 1px gap on left that 100% has */
+	min-width: 90vw; /* vw prevents 1px gap on left that 100% has */
 	width: auto;
 	top: 50%;
 	padding-bottom: 1px; /* Prevent header from extending beyond the footer */
@@ -3439,6 +3439,17 @@ p > object:only-child {
 }
 
 @media only screen and (max-width : 47em) {
+	/* Custom Header Media Height */
+
+	.has-header-image .custom-header-media img,
+	.has-header-video .custom-header-media video,
+	.has-header-video .custom-header-media iframe,
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+		height: 101%;
+	}
+
+	/* NavBar Shadow */
+
 	.main-navigation {
 		box-shadow: 0px 11px 70px -16px rgba(0, 0, 123, 1);
 	}

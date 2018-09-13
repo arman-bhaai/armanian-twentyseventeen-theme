@@ -1,0 +1,14 @@
+.entry-title {
+    text-align: center;
+    color: #728086 !important;
+    font-weight: bold !important;
+    font-size: 1.25em !important;
+    border-bottom: 2px dashed grey !important;
+}
+
+@media screen and ( min-width:48em ) {
+
+	.entry-title {
+        margin-bottom: 50px !important;
+    }
+}
